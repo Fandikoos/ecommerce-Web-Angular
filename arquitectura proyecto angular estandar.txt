@@ -1,0 +1,23 @@
+src/
+├── app/
+│   ├── core/
+│   │   ├── services/        # Servicios globales, como auth, logger, interceptors, etc.
+│   │   ├── guards/          # Guards de rutas, como autenticación o permisos
+│   │   ├── interceptors/    # HTTP interceptors para manejar tokens o errores globales
+│   │   └── models/          # Interfaces y modelos comunes (como User, Product, etc.)
+│   ├── features/            # Módulos principales del proyecto, por ejemplo:
+│   │   ├── auth/            # Autenticación (login, registro)
+│   │   ├── product/         # Módulo para gestión de productos (listado, detalles)
+│   │   ├── cart/            # Módulo del carrito de compras
+│   │   ├── checkout/        # Módulo del checkout y pagos
+│   └── shared/              # Componentes y módulos reutilizables
+│       ├── components/      # Componentes compartidos (botones, cabeceras, etc.)
+│       ├── directives/      # Directivas reutilizables
+│       ├── pipes/           # Pipes reutilizables (formatos de fecha, moneda)
+│       └── utils/           # Funciones/utilidades globales
+├── assets/                  # Archivos estáticos como imágenes, fuentes, etc.
+├── environments/            # Configuración de entornos (dev/prod)
+│   ├── environment.ts       # Configuración de desarrollo
+│   └── environment.prod.ts  # Configuración de producción
+├── styles/                  # Estilos globales (aquí puede ir tu tailwind.css)
+└── index.html               # Archivo HTML principal
